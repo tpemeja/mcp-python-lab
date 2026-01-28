@@ -21,7 +21,6 @@ server_params = StdioServerParameters(
 
 def call_llm(prompt, functions):
     token = os.getenv("GITHUB_AI_TOKEN")
-    print("TOKEN:", token)
     endpoint = "https://models.github.ai/inference"
 
     model_name = "gpt-4o"
