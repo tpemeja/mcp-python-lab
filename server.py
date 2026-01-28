@@ -12,7 +12,7 @@ def add(a: int, b: int) -> int:
 
 
 # Add a dynamic greeting resource
-@mcp.resource("greetin://{name}")
+@mcp.resource("greeting://{name}")
 def get_greeting(name: str) -> str:
     """Get a personalized greeting"""
     return f"Hello, {name}!"
